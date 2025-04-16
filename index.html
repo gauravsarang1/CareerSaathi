@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerSathi - Indian Job Board</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                </svg>
+                CareerSathi
+            </div>
+            <div class="nav-links">
+                <a href="#jobs">Browse Jobs</a>
+                <a href="#companies">Companies</a>
+                <a href="#resources">Resources</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="auth-buttons">
+                <button class="login-btn" id="login-btn">Login</button>
+                <button class="signup-btn" id="signup-btn">Sign Up</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Find Your Dream Job in India</h1>
+        <p>Discover thousands of job opportunities across India's top companies and startups. Your next career move is just a search away.</p>
+        <div class="search-bar">
+            <input type="text" placeholder="Job title, keywords, or company">
+            <select>
+                <option value="">All Locations</option>
+                <option value="delhi">Delhi NCR</option>
+                <option value="mumbai">Mumbai</option>
+                <option value="bangalore">Bangalore</option>
+                <option value="hyderabad">Hyderabad</option>
+                <option value="chennai">Chennai</option>
+                <option value="pune">Pune</option>
+                <option value="kolkata">Kolkata</option>
+            </select>
+            <button>Search Jobs</button>
+        </div>
+    </section>
+
+    <div class="container" id="jobs">
+        <h2 class="section-title">Featured Job Opportunities</h2>
+        <div class="filters">
+            <div class="filter-item active">All</div>
+            <div class="filter-item">Tech</div>
+            <div class="filter-item">Design</div>
+            <div class="filter-item">Marketing</div>
+            <div class="filter-item">Finance</div>
+            <div class="filter-item">Remote</div>
+            <div class="filter-item">Internship</div>
+        </div>
+        <div class="job-listings" id="job-listings">
+            <!-- Jobs will be dynamically inserted here -->
+        </div>
+    </div>
+
+    <section class="top-companies container" id="companies">
+        <h2 class="section-title">Top Companies Hiring Now</h2>
+        <div class="company-logos">
+            <div class="company-logo-item">TCS</div>
+            <div class="company-logo-item">Infosys</div>
+            <div class="company-logo-item">Wipro</div>
+            <div class="company-logo-item">HCL</div>
+            <div class="company-logo-item">Reliance</div>
+            <div class="company-logo-item">Flipkart</div>
+        </div>
+    </section>
+
+    <section class="cta-section" id="resources">
+        <h2>Ready to Take the Next Step?</h2>
+        <p>Whether you're a job seeker looking for opportunities or an employer looking to hire talent, CareerSathi has you covered.</p>
+        <div class="cta-buttons">
+            <button class="employer-btn">Post a Job</button>
+            <button class="jobseeker-btn">Upload Resume</button>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                        <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                        <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                    </svg>
+                    CareerSathi
+                </div>
+                <p>CareerSathi is India's leading job portal, connecting top talent with premier companies across all industries.</p>
+            </div>
+            <div class="footer-links">
+                <h3>For Job Seekers</h3>
+                <ul>
+                    <li><a href="#">Browse Jobs</a></li>
+                    <li><a href="#">Company Reviews</a></li>
+                    <li><a href="#">Salary Guide</a></li>
+                    <li><a href="#">Career Advice</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>For Employers</h3>
+                <ul>
+                    <li><a href="#">Post a Job</a></li>
+                    <li><a href="#">Browse Resumes</a></li>
+                    <li><a href="#">Recruiting Solutions</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="footer-subscribe">
+                <h3>Stay Updated</h3>
+                <p>Get the latest job alerts and career tips straight to your inbox.</p>
+                <input type="email" placeholder="Your email address">
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 CareerSathi. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 class="modal-title">Login to Your Account</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <button type="submit" class="form-submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div class="modal" id="signup-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 class="modal-title">Create an Account</h2>
+            <form id="signup-form">
+                <div class="form-group">
+                    <label for="signup-name">Full Name</label>
+                    <input type="text" id="signup-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-email">Email</label>
+                    <input type="email" id="signup-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-type">I am a</label>
+                    <select id="signup-type" required>
+                        <option value="">Select</option>
+                        <option value="jobseeker">Job Seeker</option>
+                        <option value="employer">Employer</option>
+                    </select>
+                </div>
+                <button type="submit" class="form-submit">Create Account</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Apply Job Modal -->
+    <div class="modal" id="apply-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 class="modal-title">Apply for <span id="apply-job-title"></span></h2>
+            <form id="apply-form">
+                <div class="form-group">
+                    <label for="apply-name">Full Name</label>
+                    <input type="text" id="apply-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="apply-email">Email</label>
+                    <input type="email" id="apply-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="apply-phone">Phone</label>
+                    <input type="tel" id="apply-phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="apply-resume">Resume/CV</label>
+                    <input type="file" id="apply-resume" accept=".pdf,.doc,.docx" required>
+                </div>
+                <div class="form-group">
+                    <label for="apply-cover">Cover Letter (Optional)</label>
+                    <textarea id="apply-cover"></textarea>
+                </div>
+                <button type="submit" class="form-submit">Submit Application</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="toast" id="toast">Application submitted successfully!</div>
+    <div class="loader" id="loader"></div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
